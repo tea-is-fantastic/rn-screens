@@ -1,7 +1,7 @@
 import React from 'react';
 import {Text, View} from 'react-native';
 
-export const createTestScreen = ({name}: {name: string}) => {
+export const createTestScreen = (name: string) => {
   return () => (
     <View
       style={{
