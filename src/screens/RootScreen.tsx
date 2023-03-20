@@ -12,33 +12,35 @@ interface IRootScreen {
 }
 
 export const createRootScreen = ({image, logo, line1, line2, onboard}: IRootScreen) => {
-  const navigation = useNavigation<any>();
-  return () => (
-    <CoverWithContent
-      image={image}
-    >
-      <View>
-        <ImageBackground
-          resizeMode="contain"
-          style={styles.image}
-          source={logo}
-        />
-        <Subtitle>{line1}{'\n'}{line2}</Subtitle>
-      </View>
-      <View>
-        <View style={styles.buttonPad}>
-          <ContainedButton onPress={() => navigation.navigate('HomeScreen')}>
-            Let's Go
-          </ContainedButton>
+  return () => {
+    const navigation = useNavigation<any>();
+    return (
+      <CoverWithContent
+        image={image}
+      >
+        <View>
+          <ImageBackground
+            resizeMode='contain'
+            style={styles.image}
+            source={logo}
+          />
+          <Subtitle>{line1}{'\n'}{line2}</Subtitle>
         </View>
-        {onboard && <View style={styles.buttonPad}>
-          <OutlinedButton onPress={() => navigation.navigate('OnboardScreen')}>
-            Let Me See First
-          </OutlinedButton>
-        </View>}
-      </View>
-    </CoverWithContent>
-  );
+        <View>
+          <View style={styles.buttonPad}>
+            <ContainedButton onPress={() => navigation.navigate('HomeScreen')}>
+              Let's Go
+            </ContainedButton>
+          </View>
+          {onboard && <View style={styles.buttonPad}>
+            <OutlinedButton onPress={() => navigation.navigate('OnboardScreen')}>
+              Let Me See First
+            </OutlinedButton>
+          </View>}
+        </View>
+      </CoverWithContent>
+    );
+  };
 };
 
 const styles = StyleSheet.create({
