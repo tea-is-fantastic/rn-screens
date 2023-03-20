@@ -1,6 +1,6 @@
 {
   "name": "@tisf/rn-screens",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "test",
   "main": "lib/commonjs/index",
   "module": "lib/module/index",
@@ -62,7 +62,7 @@
     "@react-native-firebase/perf": "^17.3.2",
     "@react-navigation/native": "^6.0.13",
     "@release-it/conventional-changelog": "^5.0.0",
-    "@tisf/rn-providers": "file:../rn-providers/tisf-rn-providers-0.0.0-local.23.tgz",
+    "@tisf/rn-providers": "^0.0.5",
     "@tsconfig/react-native": "^2.0.2",
     "@types/jest": "^28.1.2",
     "@types/lodash": "^4.14.191",
@@ -114,7 +114,7 @@
   },
   "peerDependencies": {
     "@react-navigation/native": "^6",
-    "@tisf/rn-providers": "file:../rn-providers/tisf-rn-providers-0.0.0-local.23.tgz",
+    "@tisf/rn-providers": "*",
     "formik": "*",
     "react": "*",
     "react-native": "*",
