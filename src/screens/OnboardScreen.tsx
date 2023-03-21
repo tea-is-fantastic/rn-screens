@@ -91,7 +91,7 @@ export const createOnboardScreen = (props: IOnboardingSlides[]): React.FC => {
 
     const _onDone = React.useCallback(() => {
       LocalStorage.set('onboarding', true);
-      navigation.replace('HomeScreen');
+      navigation.replace('MobileScreen');
     }, []);
 
     return (

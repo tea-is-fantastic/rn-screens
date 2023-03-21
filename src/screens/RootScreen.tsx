@@ -28,7 +28,7 @@ export const createRootScreen = ({image, logo, line1, line2, onboard}: IRootScre
         </View>
         <View>
           <View style={styles.buttonPad}>
-            <ContainedButton onPress={() => navigation.navigate('HomeScreen')}>
+            <ContainedButton onPress={() => navigation.navigate('MobileScreen')}>
               Let's Go
             </ContainedButton>
           </View>
