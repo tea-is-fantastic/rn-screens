@@ -2,9 +2,10 @@ import React from 'react';
 import { ScrollView, StyleSheet, View } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import { useFormikContext } from 'formik';
+import { loginGoogle, loginFacebook } from '@tisf/rn-providers';
 import { BelowText, ContainedButton, CustomStatusBar, OutlinedButton,
-  PhoneNumberInput, Title, UrduSubtitle, OrLogin, loginGoogle, loginFacebook
-} from '@tisf/rn-providers';
+  PhoneNumberInput, Title, UrduSubtitle, OrLogin
+} from '@tisf/rn-ui';
 import type { IMobileScreen } from './index';
 
 const MobileChild: React.FC<IMobileScreen> = ({ countries, social }) => {

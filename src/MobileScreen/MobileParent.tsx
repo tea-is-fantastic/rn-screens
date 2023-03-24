@@ -2,7 +2,8 @@ import React from 'react';
 import {Keyboard} from 'react-native';
 import {Formik, FormikHelpers} from 'formik';
 import {object, Schema, string} from 'yup';
-import type { PhoneModel, ReactFC } from '@tisf/rn-providers';
+import type { ReactFC } from '@tisf/rn-providers';
+import type { PhoneModel } from '@tisf/rn-ui';
 
 const initialValues: PhoneModel = {phoneNumber: '', country: 'PK'};
 

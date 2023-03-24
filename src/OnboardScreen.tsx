@@ -3,7 +3,8 @@ import { Image, StyleSheet, Text, View } from 'react-native';
 
 import AppIntroSlider from 'react-native-app-intro-slider';
 import { useNavigation } from '@react-navigation/native';
-import { CustomStatusBar, LocalStorage, ImageSource } from '@tisf/rn-providers';
+import { LocalStorage, ImageSource } from '@tisf/rn-providers';
+import { CustomStatusBar } from '@tisf/rn-ui';
 
 export interface IOnboardingSlides {
   title?: string;

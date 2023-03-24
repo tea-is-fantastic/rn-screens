@@ -1,6 +1,7 @@
 import React from 'react';
 import {ImageBackground, StyleSheet, View} from 'react-native';
-import { ContainedButton, Subtitle, CoverWithContent, OutlinedButton, ImageSource } from '@tisf/rn-providers';
+import type { ImageSource } from '@tisf/rn-providers';
+import { ContainedButton, Subtitle, CoverWithContent, OutlinedButton } from '@tisf/rn-ui';
 import { useNavigation } from '@react-navigation/native';
 
 interface IRootScreen {
