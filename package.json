@@ -1,6 +1,6 @@
 {
   "name": "@tisf/rn-screens",
-  "version": "0.0.7",
+  "version": "0.0.8",
   "description": "test",
   "main": "lib/commonjs/index",
   "module": "lib/module/index",
@@ -116,6 +116,7 @@
   "peerDependencies": {
     "@react-navigation/native": "^6",
     "@tisf/rn-providers": "*",
+    "@tisf/rn-ui": "*",
     "formik": "*",
     "react": "*",
     "react-native": "*",
