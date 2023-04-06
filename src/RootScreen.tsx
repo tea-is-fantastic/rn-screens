@@ -10,9 +10,10 @@ interface IRootScreen {
   line1: string;
   line2: string;
   onboard?: boolean;
+  peak?: boolean;
 }
 
-export const createRootScreen = ({image, logo, line1, line2, onboard}: IRootScreen) => {
+export const createRootScreen = ({image, logo, line1, line2, onboard, peak}: IRootScreen) => {
   return () => {
     const navigation = useNavigation<any>();
     return (
@@ -33,8 +34,8 @@ export const createRootScreen = ({image, logo, line1, line2, onboard}: IRootScre
               Let's Go
             </ContainedButton>
           </View>
-          {onboard && <View style={styles.buttonPad}>
-            <OutlinedButton onPress={() => navigation.navigate('OnboardScreen')}>
+          {(onboard || peak) && <View style={styles.buttonPad}>
+            <OutlinedButton onPress={() => navigation.navigate(onboard ? 'OnboardScreen' : 'HomeScreen')}>
               Let Me See First
             </OutlinedButton>
           </View>}
