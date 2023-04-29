@@ -4,3 +4,4 @@ export * from './MobileScreen';
 export * from './OtpScreen';
 export * from './OnboardScreen';
 export * from './TabScreen';
+export * from './SimpleAddressScreen';

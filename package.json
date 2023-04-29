@@ -33,7 +33,8 @@
     "prepack": "bob build",
     "release": "release-it",
     "example": "yarn --cwd example",
-    "bootstrap": "yarn example && yarn install"
+    "bootstrap": "yarn example && yarn install",
+    "p": "yarn pack"
   },
   "keywords": [
     "react-native",
@@ -62,9 +63,10 @@
     "@react-native-firebase/perf": "^17.3.2",
     "@react-navigation/bottom-tabs": "^6.5.7",
     "@react-navigation/native": "^6.0.13",
+    "@react-navigation/native-stack": "^6.9.12",
     "@release-it/conventional-changelog": "^5.0.0",
-    "@tisf/rn-providers": "^0.1.2",
-    "@tisf/rn-ui": "^0.0.1",
+    "@tisf/rn-providers": "^0.1.15",
+    "@tisf/rn-ui": "^0.0.10",
     "@tsconfig/react-native": "^2.0.2",
     "@types/jest": "^28.1.2",
     "@types/lodash": "^4.14.191",
@@ -115,10 +117,10 @@
     "@types/react": "17.0.21"
   },
   "peerDependencies": {
-    "@react-navigation/native": "^6",
     "@react-navigation/bottom-tabs": "^6",
-    "@tisf/rn-providers": "*",
-    "@tisf/rn-ui": "*",
+    "@react-navigation/native": "^6",
+    "@tisf/rn-providers": "file:../rn-providers/tisf-rn-providers-v0.1.14-local.2.tgz",
+    "@tisf/rn-ui": "file:../rn-ui/tisf-rn-ui-v0.0.9-local.48.tgz",
     "formik": "*",
     "react": "*",
     "react-native": "*",
